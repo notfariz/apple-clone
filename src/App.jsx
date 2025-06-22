@@ -6,41 +6,42 @@ import FooterLinks from './components/FooterLinks';
 import Footer from './components/Footer';
 import FooterBottom from './components/FooterBottom';
 
+// Imported images from assets
+import ipadAirImage from './assets/ipad-air.png';
+import macbookImage from './assets/macbook.jpg';
+import appleWatchImage from './assets/apple-watch.jpg';
+
 function App() {
   return (
     <>
-      <>
-        <Navbar />
-        <Hero />
+      <Navbar />
+      <Hero />
 
-        <Section
-          title="iPad Air"
-          subtitle="Now with the M2 chip."
-          dark={true}
-          bgImage="/ipad-air.png"
-        />
+      <Section
+        title="iPad Air"
+        subtitle="Now with the M2 chip."
+        dark={true}
+        bgImage={ipadAirImage}
+      />
 
-        <Section
-          title="MacBook Air"
-          subtitle="Supercharged by M3."
-          dark={true}
-          bgImage="/macbook.jpg"
-        />
+      <Section
+        title="MacBook Air"
+        subtitle="Supercharged by M3."
+        dark={true}
+        bgImage={macbookImage}
+      />
 
-        <Section
-          title="Apple Watch Series 9"
-          subtitle="Smarter. Brighter. Mightier."
-          dark={true}
-          bgImage="/apple-watch.jpg"
-        />
+      <Section
+        title="Apple Watch Series 9"
+        subtitle="Smarter. Brighter. Mightier."
+        dark={true}
+        bgImage={appleWatchImage}
+      />
 
-        <FooterLinks />
-        <FooterLegal />
-        <Footer />
-        <FooterBottom />
-
-
-      </>
+      <FooterLinks />
+      <FooterLegal />
+      <Footer />
+      <FooterBottom />
     </>
   );
 }

@@ -1,9 +1,11 @@
+import iphone16Pro from '../assets/iphone-16-pro.jpg';
+
 function Hero() {
   return (
     <section
       className="relative h-screen flex items-center justify-center text-white text-center px-4"
       style={{
-        backgroundImage: "url('/iphone-16-pro.jpg')",
+        backgroundImage: `url(${iphone16Pro})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
